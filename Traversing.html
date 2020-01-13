@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <style>
+        * {
+            border: 2px solid #dedede;
+            padding: 15px;
+            margin: 15px;
+            font-family: 'Century Gothic';
+        }
+        html {
+            margin: 5px;
+            padding: 5px;
+        }
+        body {
+            max-width: 600px;
+            font-family: sans-serif;
+            color: #333;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("ul").children().css({ "border": "2px solid lightblue" });
+            $("li").parents().css({ "border": "2px solid orange" });
+            $("li").parent().css({ "border": "2px solid green" });
+            $("p").prev().css({ "border": "2px solid pink" });
+            $("td").siblings().css({ "border": "2px solid yellow" });
+            $("input").next().css({ "border": "2px solid lightgreen" });
+            $("span").first().css({ "border": "2px solid aqua" });
+            $("h3").nextUntil("input").css({ "border": "2px solid blue" });
+        });
+
+    </script>
+</head>
+<body>
+    <h1>Beautiful World</h1>
+    <p>The <span>world's </span> leading source on <strong>bird</strong> information.</p>
+    <h2>Types of birds</h2>
+    <ul>
+        <li>Humming bird</li>
+        <li>Nightingale</li>
+        <li>Quail</li>
+    </ul>
+    <br />
+    <span>This is a span</span>
+    <h3>This is heading 2</h3>
+    <p>This is another paragraph</p>
+    <input id="Button1" type="button" value="Change types color" onclick="abc()"/>
+    <table>
+        <tr><td>Data 1</td><td>Data 2</td></tr>
+        <tr><td>Data 3</td><td>Data 4</td></tr>
+        <tr><td>Data 5</td><td>Data 6</td></tr>
+        <tr><td>Data 7</td><td>Data 8</td></tr>
+    </table>
+</body>
+
+
+</html>
